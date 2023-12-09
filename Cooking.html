@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <SCRIPT language="javascript" src="main.js"></SCRIPT>
+    <meta charset="utf-8" />
+    <title>Unit Converter</title>
+    <link href='FinalStyleSheet.css' rel='stylesheet'>
+    <h1> <a href="index.html"> Unit Converter </a> </h1>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="Cooking.html">Cooking Conversions</a> </li>
+            <li> <a href="Distance.html">Distance Conversions </a> </li>
+            <li> <a href="Construction.html">Construction Conversions</a> </li>
+
+    </nav>
+    <br />
+    <p id="intro">
+        This converter can be used for many different conversions that you may run into while following recipes when cooking and baking.
+        Almost every recipe out there will provide you with one unit for each ingredient. It is very common to not have a measuring device on
+        hand that has that exact unit. Using this site you will easily be able to convert the given unit to a unit that you have available to use.
+        <br />
+        <br />
+        <br />
+        Example: You are cooking steak and you all following a recipe for a marinade. The recipe calls for 1.5 pints of water, but you need this measurement in cups.
+        This can easily be done right here. Start by entering 1.5 into the first text box below, and then select pints in the box labeled “Select Your Starting Unit”.
+        Then select cups in the last box labeled “Select Your Starting Unit”. Upon selecting cups, the conversion will automatically happen, and the number 3.0 will
+        appear in the third box.
+    </p>
+
+    <! – This will contain the starting quantity and unit  ->
+    <div id="start">
+        <h2>Cooking Converter</h2>
+        <input type="number" id="inputValue" placeholder="Enter value" oninput="convert()">
+
+        <select id="startingUnit" onchange="convert()">
+            <option value="" disabled selected>Select Your Starting Unit</option>
+            <option value="gallons">Gallons </option>
+            <option value="liters">Liters </option>
+            <option value="pints">Pints </option>
+            <option value="cups">Cups </option>
+            <option value="tablespoons">Tablespoons </option>
+            <option value="teaspoons">Teaspoons </option>
+        </select>
+
+    </div>
+    <br />
+    <! – This will contain the ending quantity and unit  ->
+    <div id="end">
+        <p id="result"></p>
+
+        <select id="endingUnit" onchange="convert()">
+            <option value="" disabled selected>Select Your Ending Unit</option>
+            <option value="gallons">Gallons </option>
+            <option value="liters">Liters </option>
+            <option value="pints">Pints </option>
+            <option value="cups">Cups </option>
+            <option value="tablespoons">Tablespoons </option>
+            <option value="teaspoons">Teaspoons </option>
+        </select>
+    </div>
+
+
+    <script src="scripts/CookingMain.js"></script>
+    <link href='css/final.css' rel='stylesheet'>
+</body>
+</html>

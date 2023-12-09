@@ -1,0 +1,143 @@
+﻿nav {
+    font-family: Lucida Console;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 150%;
+    text-align: center;
+    padding-right: 0.5em;
+    color: #05368B;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: none;
+    justify-content: space-around;
+    list-style-type: none;
+    color:#05368B;
+}
+
+nav li {
+    border: none;
+    color:#05368B;
+}
+
+
+nav a:visited {
+    color:#05368B;
+}
+
+nav a:link {
+    color:#05368B;
+    text-decoration: none;
+    
+}
+h1 a:visited {
+    color:#05368B;
+}
+
+h1 a:link {
+    color: #05368B;
+    text-decoration: none;
+    font-family: Lucida Console;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 0;
+    text-align: left;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    margin-top: 0;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #05368B;
+}
+
+
+
+
+#start {
+    margin: auto;
+    width: 400px;
+}
+
+#end {
+    margin: auto;
+    width: 400px;
+}
+
+input {
+    border-style: solid;
+    margin: auto;
+    width: 405px;
+    padding: 20px;
+}
+
+#result {
+    border-style:solid;
+    margin: auto;
+    width: 405px;
+    padding: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+select, textarea {
+    border-style: solid;
+    margin: auto;
+    width: 450px;
+    padding: 20px;
+}
+
+
+
+#intro {
+   
+    color: #05368B;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+
+}
+
+
+
+
+form {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 6em 1fr;
+    grid-gap: 1em;
+    gap: 1em;
+    width: 60%;
+    color: #05368B;
+    font-size: 20px;
+}
+body {
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+    background-color: #5CDB95;
+}
+
+
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #05368B;
+}
+
+#Questions {
+    width: 405px;
+}
+
+input[type=submit]{
+    width: 450px;
+}

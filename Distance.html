@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Unit Converter</title>
+    <link href='FinalStyleSheet.css' rel='stylesheet'>
+    <h1> <a href="index.html"> Unit Converter </a> </h1>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="Cooking.html">Cooking Conversions</a> </li>
+            <li> <a href="Distance.html">Distance Conversions </a> </li>
+            <li> <a href="Construction.html">Construction Conversions</a> </li>
+
+    </nav>
+    <br>
+
+    <p id="intro">
+        This converter can be used for very long distances such as miles, or even very small distances like inches.
+        Sometimes in life we have a unit such as miles and we need to know how many kilometers it equates to. In America we typically only use miles,
+        but in my travels to other countries I have often come across distances in kilometers. This site will make the connection between these units very
+        simple for you.
+        <br>
+        <br>
+        <br>
+
+        Example: Someone tells you that a store is 3 kilometers away. You are not familiar with kilometers, and you want to know if this is a walkable distance for you.
+        To find out how many miles this is, enter 3 into the first text box below, and then select kilometers in the box labeled “Select Your Starting Unit”.
+        Then select miles in the last box labeled “Select Your Starting Unit”. Upon selecting miles, the conversion will automatically happen,
+        and the number 1.86 will appear in the third box.
+
+    </p>
+
+    <br />
+    <br />
+
+
+    <! – This will contain the starting quantity and unit  ->
+    <div id="start">
+        <h2>Distance Converter</h2>
+        <input type="number" id="inputValue" placeholder="Enter value" oninput="convert()">
+
+        <select id="startingUnit" onchange="convert()">
+            <option value="" disabled selected>Select Your Starting Unit</option>
+            <option value="inch">Inch (in)</option>
+            <option value="feet">Feet (ft)</option>
+            <option value="yard">Yard (yd)</option>
+            <option value="mile">Mile (mi)</option>
+            <option value="kilometer">Kilometer (km)</option>
+        </select>
+
+    </div>
+    <br />
+
+    <! – This will contain the end quantity and unit  ->
+    <div id="end">
+        <p id="result"></p>
+
+        <select id="endingUnit" onchange="convert()">
+            <option value="" disabled selected>Select Your Ending Unit</option>
+            <option value="inch">Inch (in)</option>
+            <option value="feet">Feet (ft)</option>
+            <option value="yard">Yard (yd)</option>
+            <option value="mile">Mile (mi)</option>
+            <option value="kilometer">Kilometer (km)</option>
+        </select>
+
+    </div>
+    <script src="scripts/DistanceMain.js"></script>
+    <link href='css/final.css' rel='stylesheet'>
+</body>
+</html>
